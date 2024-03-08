@@ -1,12 +1,33 @@
 /* eslint-disable react/jsx-no-target-blank */
-import Herotesting1 from "../../assets/images/herotesting1.png";
-import Herotesting2 from "../../assets/images/herotesting2.png";
-import Herotesting3 from "../../assets/images/heroTesting3.png";
-import { Link } from "react-router-dom";
+import category from "../../assets/images/category.jpg";
+import category1 from "../../assets/images/category1.png";
+import category2 from "../../assets/images/category2.png";
+
+import ServicePlatformCard from "../../components/Home/ServicePlateCard";
+const categoryTags = [
+  {
+    src: category,
+    title: "Venue booking",
+    description:
+      "Embark on a seamless journey of venue booking with us, where every event is crafted to perfection and every moment is destined to be unforgettab",
+  },
+  {
+    src: category1,
+    title: "Design to suit your event",
+    description:
+      "Inspire a memorable and aesthetically pleasing experience for everyone at your event with our professional event designer, which help imagination meets methodical planning to bring your ideal event to life.",
+  },
+  {
+    src: category2,
+    title: "Event of all kind",
+    description:
+      "Regardless of the occasion or scale, we offer assistance for events of all kinds, giving skilled support to ensure the seamless implementation of your vision.",
+  },
+];
 
 const ServicePlatform = () => {
   return (
-    <section id="HeaderSection-posts" className="HeaderSection wrapper mt-12">
+    <section id="HeaderSection-posts" className="HeaderSection wrapper mt-16">
       {/* Heading Section */}
       <div className=" flex  justify-center  items-center pt-14">
         <div className=" w-9/12 text-center ">
@@ -20,73 +41,10 @@ const ServicePlatform = () => {
           </p>
         </div>
       </div>
-      <div className="">
-        <div
-          className="col-xl-4 col-md-6"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div>
-            <div className="post-img">
-              <Link to="/about">
-                <img
-                  src={Herotesting1}
-                  alt="Daytopia Network Image "
-                  className="img-fluid"
-                />
-              </Link>
-            </div>
-
-            <h2 className="title">Daytopia Mentoring Network </h2>
-            <p className="post-category">
-              Learn more about the six pillars of the Daytopia Mentoring
-              Program.
-            </p>
-          </div>
-        </div>
-        <div
-          className="col-xl-4 col-md-6"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div>
-            <div className="post-img">
-              <Link to="/daytopia-shop/daytopia-investment-club">
-                <img
-                  src={Herotesting2}
-                  alt="Daytopia Investment Club"
-                  className="img-fluid"
-                />
-              </Link>
-            </div>
-
-            <h2 className="title">Daytopia Investment Club. </h2>
-            <p className="post-category">Check Our Investment Club</p>
-          </div>
-        </div>
-
-        <div
-          className="col-xl-4 col-md-6"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div>
-            <div className="post-img">
-              <a href="https://www.youtube.com/@daytopiatv" target="_blank">
-                <img
-                  src={Herotesting3}
-                  alt="daytopia workshop and seminals Image"
-                  className="img-fluid"
-                />
-              </a>
-            </div>
-
-            <h2 className="title">Daytopia Workshops and Seminars.</h2>
-            <p className="post-category">
-              Check our youtube channel for our Workshops and Seminars
-            </p>
-          </div>
-        </div>
+      <div className=" grid grid-cols-3 gap-10 py-20">
+        {categoryTags.map((categoryTag) => (
+          <ServicePlatformCard detail={categoryTag} key={categoryTag.title} />
+        ))}
       </div>
     </section>
   );

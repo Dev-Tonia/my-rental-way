@@ -1,218 +1,76 @@
-import One from '../../assets/images/one.jpeg';
-import Two from '../../assets/images/two.jpeg';
-import Three from '../../assets/images/three.png';
-import Four from '../../assets/images/four.png';
-import Five from '../../assets/images/five.png';
-import Six from '../../assets/images/six.png';
-import { Content } from './Content'; 
-import { ProductsHeading } from './Content';
+import One from "../../assets/images/one.jpeg";
+import Two from "../../assets/images/two.jpeg";
+import Three from "../../assets/images/three.png";
+import Four from "../../assets/images/four.png";
+import Five from "../../assets/images/five.png";
+import Six from "../../assets/images/six.png";
+
+import ProductCard from "../../components/reusableUi/ProductCard";
 
 const RentalsProducts = () => {
-    // const Content = {
-    //     heading: "Testing adads"
-    // }
+  const products = [
+    {
+      name: "Chair",
+      detail: "Color",
+      src: Five,
+    },
+    {
+      name: "Table",
+      detail: "Shape",
+      detailLists: ["Rectangle", "Circle"],
+      src: Six,
+    },
+    {
+      name: "Tent",
+      detail: "Size",
+      detailLists: ["6x4 Meter"],
+      src: Four,
+    },
+    {
+      name: "Lighting",
+      detail: "Size",
+      detailLists: ["S", "M", "L"],
+      src: Two,
+    },
+    {
+      name: "CenterPlace",
+      detail: "Color",
+      detailLists: ["S", "M", "L"],
+      src: One,
+    },
+    {
+      name: "Sound System",
+      detail: "Color",
+      detailLists: ["S", "M", "L"],
+      src: Three,
+    },
+  ];
 
   return (
-    <section id="rental-products" className="rental-products">
-
-      
-      <div className="container section-title" data-aos="fade-up">
-        <h2>Browse Rental Products</h2>
-        <p>{Content.heading} diverse range of rental product categories, from elegant furniture and stylish decor to cutting-edge audiovisual equipment, ensuring every aspect of your event is tailored to perfection.</p>
-      </div>
-
-      <div className="container">
-
-        <div className="row gy-4">
-
-          <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div className="post-img">
-                <img src={ One } alt="" className="img-fluid" />
-              </div>
-                
-              <div className='rental-productsCont'>
-              <p className="post-category">{ ProductsHeading.Product1 }</p>
-              <h2>$1.75+ VAT</h2>
-</div>
-            
-             <div className='rental_productsCont-child'>
-
-             <div className='rental_productsCont-child-1'>
-                Color
-                <div className='spans_product'>
-                <span className='span1_product'></span>
-                <span className='span2_product'></span>
-                <span className='span3_product'></span>
-                </div>
-             </div>
-           
-             <div className='rental_products_btn'>
-             <button>Order Now</button>
-             </div>
-             </div>
-
-            </article>
+    <section id="" className=" pt-4">
+      <div className="wrapper">
+        <div className=" flex  justify-center  items-center pt-16">
+          <div className=" w-9/12 text-center ">
+            <h2 className="  text-5xl font-bold text-neutral-50 px-5 pb-5">
+              Browse rental products
+            </h2>
+            <p className=" text-neutral-30 text-xl">
+              Explore our diverse range of rental product categories, from
+              elegant furniture and stylish decor to cutting-edge audiovisual
+              equipment, ensuring every aspect of your event is tailored to
+              perfection.
+            </p>
           </div>
-          <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div className="post-img">
-                <img src={ Three } alt="" className="img-fluid" />
-              </div>
-                
-              <div className='rental-productsCont'>
-              <p className="post-category">{ ProductsHeading.Product2 }</p>
-              <h2>$1.75+ VAT</h2>
-</div>
-            
-             <div className='rental_productsCont-child'>
-
-             <div className='rental_productsCont-child-1'>
-                Color
-                <div className='spans_product'>
-                <span className='span1_product'></span>
-                <span className='span2_product'></span>
-                <span className='span3_product'></span>
-                </div>
-             </div>
-           
-             <div className='rental_products_btn'>
-             <button>Order Now</button>
-             </div>
-             </div>
-
-            </article>
-          </div>
-          <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div className="post-img">
-                <img src={ Two } alt="" className="img-fluid" />
-              </div>
-                
-              <div className='rental-productsCont'>
-              <p className="post-category">{ ProductsHeading.Product3 }</p>
-              <h2>$1.75+ VAT</h2>
-</div>
-            
-             <div className='rental_productsCont-child'>
-
-             <div className='rental_productsCont-child-1'>
-                Color
-                <div className='spans_product'>
-                <span className='span1_product'></span>
-                <span className='span2_product'></span>
-                <span className='span3_product'></span>
-                </div>
-             </div>
-           
-             <div className='rental_products_btn'>
-             <button>Order Now</button>
-             </div>
-             </div>
-
-            </article>
-          </div>
-          <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div className="post-img">
-                <img src={ Four } alt="" className="img-fluid" />
-              </div>
-                
-              <div className='rental-productsCont'>
-              <p className="post-category">{ ProductsHeading.Product4 }</p>
-              <h2>$1.75+ VAT</h2>
-</div>
-            
-             <div className='rental_productsCont-child'>
-
-             <div className='rental_productsCont-child-1'>
-                Color
-                <div className='spans_product'>
-                <span className='span1_product'></span>
-                <span className='span2_product'></span>
-                <span className='span3_product'></span>
-                </div>
-             </div>
-           
-             <div className='rental_products_btn'>
-             <button>Order Now</button>
-             </div>
-             </div>
-
-            </article>
-          </div>
-          <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div className="post-img">
-                <img src={ Five } alt="" className="img-fluid" />
-              </div>
-                
-              <div className='rental-productsCont'>
-              <p className="post-category">{ ProductsHeading.Product5 }</p>
-              <h2>$1.75+ VAT</h2>
-</div>
-            
-             <div className='rental_productsCont-child'>
-
-             <div className='rental_productsCont-child-1'>
-                Color
-                <div className='spans_product'>
-                <span className='span1_product'></span>
-                <span className='span2_product'></span>
-                <span className='span3_product'></span>
-                </div>
-             </div>
-           
-             <div className='rental_products_btn'>
-             <button>Order Now</button>
-             </div>
-             </div>
-
-            </article>
-          </div>
-          <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div className="post-img">
-                <img src={ Six } alt="" className="img-fluid" />
-              </div>
-                
-              <div className='rental-productsCont'>
-              <p className="post-category">{ ProductsHeading.Product6 }</p>
-              <h2>$1.75+ VAT</h2>
-</div>
-            
-             <div className='rental_productsCont-child'>
-
-             <div className='rental_productsCont-child-1'>
-                Color
-                <div className='spans_product'>
-                <span className='span1_product'></span>
-                <span className='span2_product'></span>
-                <span className='span3_product'></span>
-                </div>
-             </div>
-           
-             <div className='rental_products_btn'>
-             <button>Order Now</button>
-             </div>
-             </div>
-
-            </article>
-          </div>
-          
-
         </div>
 
+        <div className="grid grid-cols-3 gap-5 py-16">
+          {products.map((product) => (
+            <ProductCard product={product} key={product.name} />
+          ))}
+        </div>
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default RentalsProducts
+export default RentalsProducts;
