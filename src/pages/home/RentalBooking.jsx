@@ -51,7 +51,7 @@ const RentalBooking = () => {
             <RoundedCard className={"p-6 "}>
               <RoundedImg src={Rental1} className={"h-[500px]"} />
             </RoundedCard>
-            <RoundedCard className={"w-1/2 px-4 absolute bottom-0 -left-3"}>
+            <RoundedCard className={"w-1/2 px-4 absolute -bottom-10 -left-3"}>
               <RoundedImg src={ImgOverlap} className={"py-4"} />
               <div className=" space-y-3 ">
                 <SchemeCard className={"bg-white-20 w-5/6"} />
@@ -64,7 +64,7 @@ const RentalBooking = () => {
               </div>
             </RoundedCard>
           </div>
-          <div className=" flex items-end mb-16">
+          <div className=" flex items-end ">
             <EllipseCircle className={"bg-primary-600"} />
           </div>
           <div className="  w-1/2">
@@ -86,7 +86,9 @@ const RentalBooking = () => {
                   </div>
                   <div className=" text-neutral-50">
                     <h5 className=" text-xl font-bold "> {item.title}</h5>
-                    <p className=" text-lg pt-2">{item.description}</p>
+                    <p className=" text-lg pt-2 leading-6">
+                      {item.description}
+                    </p>
                   </div>
                 </li>
               ))}

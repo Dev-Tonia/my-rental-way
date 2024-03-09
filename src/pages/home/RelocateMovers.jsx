@@ -1,23 +1,35 @@
 import Relocate1 from "../../assets/images/relocation1.jpeg";
 import Relocate2 from "../../assets/images/relocation2.png";
 import RoundedImg from "../../components/reusableUi/RoundedImg";
+import Ellipse from "../../assets/images/Ellipse1.png";
+import RoundedCard from "../../components/reusableUi/RoundedCard";
+import SchemeCard from "../../components/reusableUi/SchemeCard";
 
 const RelocateMovers = () => {
+  const details = [
+    "Handling of possession with utmost care  for safe and timely relocation.",
+    "offer seamless and stress-free transitions for individuals and businesses alike",
+    "Our professional team is committed to providing personalized solutions tailored to meet your unique moving needs.",
+  ];
   return (
-    <section id="" className="">
+    <section
+      id=""
+      className=" pt-3 pb-5"
+      style={{
+        background: `url(${Ellipse}) no-repeat `,
+        backgroundPosition: " top right",
+        backgroundSize: "30%",
+      }}
+    >
       <div className="wrapper">
-        <div className="flex gap-4 flex-row-reverse ">
-          <div
-            className="col-lg-5 order-2 order-lg-1"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="text-neutral-50 pe-10 ">
+        <div className="flex gap-10">
+          <div className=" w-[46%]">
+            <div className="text-neutral-50 w-10/12 ">
               <h5 className=" text-lg">We also render </h5>
               <h2 className="text-[40px] leading-10 font-bold">
                 Relocation/Movers service
               </h2>
-              <p>
+              <p className=" text-lg my-4 leading-6">
                 The moving process is easy and stress-free with MY WAY Rental
                 Services Ltd. For movers that are dependable and reasonably
                 priced, trust us to handle your moving needs. For the easiest
@@ -25,40 +37,36 @@ const RelocateMovers = () => {
               </p>
             </div>
 
-            <ul className="relocateDiv_child">
-              <li>
-                <i className="bi bi-check"></i>{" "}
-                <span>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </span>
-              </li>
-              <li>
-                <i className="bi bi-check"></i>
-                <span>
-                  {" "}
-                  Duis aute irure dolor in reprehenderit in voluptate velit.
-                </span>
-              </li>
-              <li>
-                <i className="bi bi-check"></i>{" "}
-                <span>
-                  Facilis ut et voluptatem aperiam. Autem soluta ad fugiat
-                </span>
-                .
-              </li>
+            <ul className="">
+              {details.map((detail) => (
+                <li className=" flex gap-5 my-4 items-center" key={detail}>
+                  <div
+                    className={`w-6 h-6  flex items-center justify-center bg-secondary rounded`}
+                  >
+                    <i className="bi bi-check text-2xl text-white place-self-center"></i>
+                  </div>
+                  <div>{detail}</div>
+                </li>
+              ))}
             </ul>
-            <a href="#" className="relocateDiv_child-Btn btn btn-get-started">
-              Request for service
-            </a>
           </div>
-          <div
-            className="col-lg-7 order-1 order-lg-2 d-flex align-items-center"
-            data-aos="zoom-out"
-            data-aos-delay="100"
-          >
-            <div className="image-stack">
-              <RoundedImg src={Relocate1} />
-              <RoundedImg src={Relocate2} />
+
+          <div className="w-[54%]">
+            <div className=" ">
+              <RoundedCard className={"p-4 relative rotate-[6deg]"}>
+                <RoundedImg src={Relocate1} />
+                <RoundedCard
+                  className={
+                    "p-4 w-6/12 absolute bottom-8 -left-8 -rotate-[20deg]"
+                  }
+                >
+                  <RoundedImg src={Relocate2} />
+                  <div className=" my-2">
+                    <SchemeCard className={" bg-[#FFE6D8] w-10/12 mb-2"} />
+                    <SchemeCard className={"bg-[#FFE6D8] w-8/12"} />
+                  </div>
+                </RoundedCard>
+              </RoundedCard>
             </div>
           </div>
         </div>

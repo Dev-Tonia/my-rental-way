@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import "../../general.css";
 // import "./header.css";
 import openIcon from "../../assets/icons/icons8-menu-24.png";
@@ -11,6 +11,33 @@ const Header = () => {
   const [active, setActive] = useState("nav__menu");
   const [isOpen, setIsOpen] = useState(false);
 
+  const navItems = [
+    {
+      title: "Home",
+      path: "/",
+    },
+    {
+      title: "Rentals",
+      path: "/rentals",
+    },
+    {
+      title: "Venue Booking",
+      path: "/venue-booking",
+    },
+    {
+      title: "Relocation",
+      path: "/relocation",
+    },
+    {
+      title: "Property",
+      path: "/property",
+    },
+    {
+      title: "Contact",
+      path: "/contact",
+    },
+  ];
+
   const closeToggle = () => {
     setIsOpen(false);
   };
@@ -21,50 +48,25 @@ const Header = () => {
   };
 
   return (
-    <header id="header" className=" sticky top-0 wrapper  py-3 ">
+    <header
+      id="header"
+      className=" sticky top-0 wrapper  py-3 bg-white/70 backdrop-blur-xl z-50 shadow-md"
+    >
       <div className=" flex items-center justify-between">
         <div className=" w-[100px] logo-menuflex">
-          <NavLink to="/">
+          <Link to="/">
             <img src={Logo} className=" " alt="Brand logo" />
-          </NavLink>
+          </Link>
         </div>
         <nav id="navbar" className="  order-last md:order-none ">
           <ul className={`hidden md:flex items-center space-x-8   ${active}`}>
-            <li>
-              <NavLink className="nav-link" to="/">
-                Home
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink className="nav-link " to="/rentals">
-                Rentals
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink className="nav-link " to="/venu-booking">
-                Venu Booking
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink className="nav-link " to="/relocation">
-                Relocation
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink className="nav-link " to="/property">
-                Property
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink className="nav-link " to="/contact">
-                Contact
-              </NavLink>
-            </li>
+            {navItems.map((navItem) => (
+              <li key={navItem.title} className=" nav-item">
+                <NavLink className=" font-semibold" to={navItem.path}>
+                  {navItem.title}
+                </NavLink>
+              </li>
+            ))}
           </ul>
           <div onClick={navToggle} className={`block md:hidden`}>
             <img src={isOpen ? closeIcon : openIcon} alt="Toggle Icon" />
