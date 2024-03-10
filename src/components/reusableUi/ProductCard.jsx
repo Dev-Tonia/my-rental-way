@@ -5,13 +5,9 @@ import RoundedImg from "./RoundedImg";
 const ProductCard = ({ product, className }) => {
   //   const details = ;
   return (
-    <RoundedCard className=" p-5 pb-10">
+    <RoundedCard className=" p-5 pb-10 transition ease-in-out delay-150 hover:scale-110">
       <div>
-        {product.name === "Table" ? (
-          <RoundedImg src={product.src} className={"h-[200px]"} />
-        ) : (
-          <RoundedImg src={product.src} />
-        )}
+        <RoundedImg src={product.src} className={"h-[220px]"} />
 
         <div className=" flex justify-between items-center mt-4">
           <h5 className=" font-bold text-2xl text-neutral-50">

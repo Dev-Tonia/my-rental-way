@@ -1,7 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import category from "../../assets/images/category.jpg";
-import category1 from "../../assets/images/category1.png";
-import category2 from "../../assets/images/category2.png";
+import { category, category1, category2 } from "../../utils/images";
 
 import ServicePlatformCard from "../../components/Home/ServicePlateCard";
 const categoryTags = [

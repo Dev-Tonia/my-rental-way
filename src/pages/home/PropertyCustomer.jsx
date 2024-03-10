@@ -1,12 +1,14 @@
-import Ellipse from "../../assets/images/Ellipse1.png";
-import Img from "../../assets/images/customerBenefitBg.png";
-import HomeIcon from "../../assets/icons/iconHome.png";
-import GraphIcon from "../../assets/icons/iconGraph.png";
-import BookIcon from "../../assets/icons/iconBook.png";
+import {
+  Ellipse,
+  Img,
+  HomeIcon,
+  GraphIcon,
+  BookIcon,
+} from "../../utils/images";
 
 import RoundedCard from "../../components/reusableUi/RoundedCard";
 import RoundedImg from "../../components/reusableUi/RoundedImg";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const PropertyCustomer = () => {
   const items = [

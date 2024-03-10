@@ -2,7 +2,7 @@ import BookAVenu from "./BookAVenu";
 import Breadcrubms from "./Breadcrubms";
 import "./venuBooking.css";
 
-const VenuBooking = () => {
+const VenueBooking = () => {
   return (
     <>
       <Breadcrubms />
@@ -11,4 +11,4 @@ const VenuBooking = () => {
   );
 };
 
-export default VenuBooking;
+export default VenueBooking;

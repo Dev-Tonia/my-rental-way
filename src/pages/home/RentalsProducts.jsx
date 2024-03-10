@@ -1,9 +1,4 @@
-import One from "../../assets/images/one.jpeg";
-import Two from "../../assets/images/two.jpeg";
-import Three from "../../assets/images/three.png";
-import Four from "../../assets/images/four.png";
-import Five from "../../assets/images/five.png";
-import Six from "../../assets/images/six.png";
+import { One, Two, Three, Four, Five, Six } from "../../utils/images";
 
 import ProductCard from "../../components/reusableUi/ProductCard";
 

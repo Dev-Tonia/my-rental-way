@@ -1,10 +1,12 @@
 // Images
-import Rental1 from "../../assets/images/rental1.jpeg";
-import ServiceIcon from "../../assets/icons/service.png";
-import ServiceIcon1 from "../../assets/icons/Vector.png";
-import ServiceIcon2 from "../../assets/icons/service2.png";
-import ImgOverlap from "../../assets/images/hero4.png";
-import Ellipse from "../../assets/images/Ellipse1.png";
+import {
+  Rental1,
+  ServiceIcon,
+  ServiceIcon1,
+  ServiceIcon2,
+  ImgOverlap,
+  Ellipse,
+} from "../../utils/images";
 
 // component
 import RoundedCard from "../../components/reusableUi/RoundedCard";

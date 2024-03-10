@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // import "./home.css"; // Import the CSS file for Hero component styles
 import SimpleSlider from "./CustomSlider";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -17,9 +17,9 @@ const Hero = () => {
               Experience extraordinary Moments and effortless Booking, with our
               Venue Collection
             </p>
-            <NavLink to="#" className="btn font-semibold hover:text-white">
+            <Link to="#" className="btn font-semibold hover:text-white">
               Learn more
-            </NavLink>
+            </Link>
           </div>
         </div>
       </div>

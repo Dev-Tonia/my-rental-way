@@ -1,7 +1,5 @@
-import Relocate1 from "../../assets/images/relocation1.jpeg";
-import Relocate2 from "../../assets/images/relocation2.png";
+import { Relocate2, Relocate1, Ellipse } from "../../utils/images";
 import RoundedImg from "../../components/reusableUi/RoundedImg";
-import Ellipse from "../../assets/images/Ellipse1.png";
 import RoundedCard from "../../components/reusableUi/RoundedCard";
 import SchemeCard from "../../components/reusableUi/SchemeCard";
 
