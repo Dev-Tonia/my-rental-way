@@ -1,10 +1,57 @@
+import CustomInput from "../../components/reusableUi/CustomInput";
+import GroupInput from "../../components/reusableUi/GroupInput";
+
 const BookAVenu = () => {
   return (
     <section>
       <div className="wrapper">
-        <div className="">
-          <h2 className="text-center font-bold text ">Book A Venue</h2>
+        <div className=" bg-[#FAFAFA] rounded-[50px] py-10 px-16">
+          <h2 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
+            Book A Venue
+          </h2>
           <form action="" method="POST">
+            <GroupInput>
+              <CustomInput
+                formData={{
+                  legend: "Name of Organizer",
+                  type: "text",
+                  placeholder: "John Doe",
+                }}
+              />
+              <CustomInput
+                formData={{
+                  legend: "Email Address",
+                  type: "email",
+                  placeholder: "Johndoe@gmail.com",
+                }}
+              />
+            </GroupInput>
+            <GroupInput>
+              <CustomInput
+                formData={{
+                  legend: "Phone Number",
+                  type: "text",
+                  placeholder: "+447 354 6543 876",
+                }}
+              />
+              <CustomInput
+                formData={{
+                  legend: "Number of Guests",
+                  type: "number",
+                  min: 1,
+                }}
+              />
+            </GroupInput>
+            <GroupInput>
+              <CustomInput
+                formData={{
+                  legend: "Event Date",
+                  type: "date",
+                }}
+              />
+            </GroupInput>
+
+            {/*
             <div className="form1Flex">
               <div className="formFlex_i">
                 <label htmlFor="Name">Name Of Organizer</label>
@@ -117,9 +164,11 @@ const BookAVenu = () => {
                 </select>
               </div>
             </div>
-
-            <div className="QuoteBtn">
-              <button type="submit">Submit</button>
+            */}
+            <div className="flex items-center justify-center">
+              <button type="submit" className=" btn">
+                Submit
+              </button>
             </div>
           </form>
         </div>
