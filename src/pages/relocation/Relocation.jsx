@@ -1,5 +1,4 @@
 import Breadcrumbs from "./Breadcrumbs";
-import "./relocation.css";
 import RelocateWithUs from "./RelocateWithUs";
 
 const Relocation = () => {

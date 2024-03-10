@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Home from "./pages/home/Home";
 import Property from "./pages/property/Property";
 import Relocation from "./pages/relocation/Relocation";
-import VenueBooking from "./pages/venuBooking/VenuBooking";
+import VenueBooking from "./pages/venueBooking/VenueBooking";
 import Contact from "./pages/contact/Contact";
 import Rentals from "./pages/rentals/Rentals";
 import Layout from "./components/layout/layout";

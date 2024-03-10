@@ -23,10 +23,12 @@ import Relocate2 from "../assets/images/relocation2.png";
 import Img from "../assets/images/customerBenefitBg.png";
 import HomeIcon from "../assets/icons/iconHome.png";
 import GraphIcon from "../assets/icons/iconGraph.png";
+import VenueBookingHero from "../assets/images/venubooking.jpeg";
 import BookIcon from "../assets/icons/iconBook.png";
 
 export {
   Relocate1,
+  VenueBookingHero,
   Relocate2,
   Seven,
   Img,
