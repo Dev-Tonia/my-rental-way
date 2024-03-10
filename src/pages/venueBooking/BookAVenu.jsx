@@ -1,3 +1,6 @@
+// import DatePicker from "tailwind-datepicker-react";
+// import CustomDatePicker from "../../components/reusableUi/CustomDatePicker";
+
 import CustomInput from "../../components/reusableUi/CustomInput";
 import GroupInput from "../../components/reusableUi/GroupInput";
 
@@ -5,6 +8,7 @@ const BookAVenu = () => {
   return (
     <section>
       <div className="wrapper">
+        /
         <div className=" bg-[#FAFAFA] rounded-[50px] py-10 px-16">
           <h2 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
             Book A Venue
@@ -47,6 +51,7 @@ const BookAVenu = () => {
                 formData={{
                   legend: "Event Date",
                   type: "date",
+                  placeholder: "+447 354 6543 876",
                 }}
               />
             </GroupInput>
