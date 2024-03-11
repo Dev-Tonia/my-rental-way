@@ -26,11 +26,13 @@ import GraphIcon from "../assets/icons/iconGraph.png";
 import VenueBookingHero from "../assets/images/venubooking.jpeg";
 import BookIcon from "../assets/icons/iconBook.png";
 import RelocationHero from "../assets/images/venu1.png";
+import PropertyHero from "../assets/images/propertyHero.png";
 
 export {
   Relocate1,
   VenueBookingHero,
   RelocationHero,
+  PropertyHero,
   Relocate2,
   Seven,
   Img,
