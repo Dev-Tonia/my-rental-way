@@ -1,6 +1,6 @@
 import OtherHeroSection from "../../components/reusableUi/OtherHeroSection";
 import { VenueBookingHero } from "../../utils/images";
-import BookAVenu from "./BookAVenu";
+import BookVenue from "./BookVenue";
 const title =
   " Explore Our Versatile Venue Options for Unforgettable Events on Our Platform";
 const subtitle =
@@ -14,7 +14,7 @@ const VenueBooking = () => {
         title={title}
         subtitle={subtitle}
       />
-      <BookAVenu />
+      <BookVenue />
     </>
   );
 };

@@ -25,10 +25,12 @@ import HomeIcon from "../assets/icons/iconHome.png";
 import GraphIcon from "../assets/icons/iconGraph.png";
 import VenueBookingHero from "../assets/images/venubooking.jpeg";
 import BookIcon from "../assets/icons/iconBook.png";
+import RelocationHero from "../assets/images/venu1.png";
 
 export {
   Relocate1,
   VenueBookingHero,
+  RelocationHero,
   Relocate2,
   Seven,
   Img,

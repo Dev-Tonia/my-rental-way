@@ -1,13 +1,20 @@
-import Breadcrumbs from "./Breadcrumbs";
+import OtherHeroSection from "../../components/reusableUi/OtherHeroSection";
+import { RelocationHero } from "../../utils/images";
 import RelocateWithUs from "./RelocateWithUs";
+const title = "Streamline Your Move with Our Dependable Relocation Services";
+const subtitle =
+  "Effortless Moving Solutions: Your Journey to a New Beginning Starts Here";
 
 const Relocation = () => {
   return (
-    <div>
-      <Breadcrumbs />
+    <>
+      <OtherHeroSection
+        src={RelocationHero}
+        title={title}
+        subtitle={subtitle}
+      />
       <RelocateWithUs />
-    </div>
+    </>
   );
 };
-
 export default Relocation;

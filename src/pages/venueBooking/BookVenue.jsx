@@ -1,6 +1,8 @@
+// import DatePicker from "tailwind-datepicker-react";
+// import CustomDatePicker from "../../components/reusableUi/CustomDatePicker";
+
 import CustomInput from "../../components/reusableUi/CustomInput";
 import CustomSelect from "../../components/reusableUi/CustomSelect";
-import CustomTextarea from "../../components/reusableUi/CustomTextarea";
 import GroupInput from "../../components/reusableUi/GroupInput";
 import RoundedForm from "../../components/reusableUi/RoundedForm";
 const options = [
@@ -9,13 +11,10 @@ const options = [
   { title: "9Mobile", value: "9Mobile" },
   { title: "Glo", value: "Glo" },
 ];
-const RelocateWithUs = () => {
+const BookVenue = () => {
   return (
     <section>
-      <RoundedForm
-        btnTitle={"Request quotation"}
-        formTitle={"Relocate with us"}
-      >
+      <RoundedForm btnTitle={"Submit"} formTitle={"Book A Venue"}>
         <GroupInput>
           <CustomInput
             formData={{
@@ -33,45 +32,53 @@ const RelocateWithUs = () => {
           />
         </GroupInput>
         <GroupInput>
-          <CustomSelect
-            formData={{
-              legend: "Type of Goods",
-              options: options,
-            }}
-          />
           <CustomInput
             formData={{
               legend: "Phone Number",
               type: "text",
-              placeholder: "Enter Phone Number",
+              placeholder: "+447 354 6543 876",
+            }}
+          />
+          <CustomInput
+            formData={{
+              legend: "Number of Guests",
+              type: "number",
+              min: 1,
             }}
           />
         </GroupInput>
         <GroupInput>
           <CustomInput
             formData={{
-              legend: "Move from ",
-              type: "text",
-              placeholder: "Enter post code",
+              legend: "Event Date",
+              type: "date",
+              placeholder: "+447 354 6543 876",
             }}
           />
-          <CustomInput
+          <CustomSelect
             formData={{
-              legend: "Move to",
-              type: "text",
-              placeholder: "Enter post code",
+              legend: "Preferred Location",
+              options: options,
             }}
           />
         </GroupInput>
-        <CustomTextarea
-          formData={{
-            legend: "Message",
-            placeholder: "Write your message here",
-          }}
-        />
+        <GroupInput>
+          <CustomSelect
+            formData={{
+              legend: "Event Type",
+              options: options,
+            }}
+          />
+          <CustomSelect
+            formData={{
+              legend: "Other Information",
+              options: options,
+            }}
+          />
+        </GroupInput>
       </RoundedForm>
     </section>
   );
 };
 
-export default RelocateWithUs;
+export default BookVenue;
