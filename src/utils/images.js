@@ -27,9 +27,19 @@ import VenueBookingHero from "../assets/images/venubooking.jpeg";
 import BookIcon from "../assets/icons/iconBook.png";
 import RelocationHero from "../assets/images/venu1.png";
 import PropertyHero from "../assets/images/propertyHero.png";
+import IconBook2 from "../assets/icons/iconBook2.png";
+import HomeIcon2 from "../assets/icons/iconHome2.png";
+import PurchaseTag from "../assets/icons/purchase-tag.png";
+import OutlineSeal from "../assets/icons/outline_seal.png";
+import Union from "../assets/images/Union.png";
 
 export {
+  PurchaseTag,
+  Union,
+  OutlineSeal,
   Relocate1,
+  HomeIcon2,
+  IconBook2,
   VenueBookingHero,
   RelocationHero,
   PropertyHero,
