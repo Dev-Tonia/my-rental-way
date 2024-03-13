@@ -1,6 +1,5 @@
-import React from "react";
 import { Ellipse } from "../../utils/images";
-export default function ContactHero() {
+export default function GradientHeader({ title, body }) {
   return (
     <section id="" className="  wrapper py-20">
       <div className=" relative overflow-hidden bg-gradient-to-r from-[#FF4D003D] via-[#FFC93F3D] to-[#FF5C003D] rounded-3xl flex items-center justify-center py-16">
@@ -13,15 +12,10 @@ export default function ContactHero() {
         <div className=" w-9/12 px-5">
           <div className=" flex items-center justify-center mb-8">
             <div className=" relative">
-              <h2 className=" font-bold text-4xl text-neutral-50">
-                Get in touch
-              </h2>
+              <h2 className=" font-bold text-4xl text-neutral-50">{title}</h2>
             </div>
           </div>
-          <p className=" text-neutral-50 text-center">
-            Have questions or need assistance? We're here to help you every step
-            of the way. Reach out to our friendly team for personalized support.
-          </p>
+          <p className=" text-neutral-50 text-center">{body}</p>
         </div>
       </div>
     </section>

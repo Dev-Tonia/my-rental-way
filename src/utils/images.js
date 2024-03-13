@@ -36,9 +36,17 @@ import LocationLine from "../assets/icons/location-line.png";
 import MailBox from "../assets/icons/mail-box-outline.png";
 import OutlineEmail from "../assets/icons/outline-email.png";
 import PhoneBold from "../assets/icons/phone-bold.png";
+import Team1 from "../assets/images/team1.png";
+import Team2 from "../assets/images/team2.png";
+import Team3 from "../assets/images/team3.png";
+import Team4 from "../assets/images/team4.png";
 
 export {
   PurchaseTag,
+  Team1,
+  Team2,
+  Team3,
+  Team4,
   LocationLine,
   OutlineEmail,
   PhoneBold,

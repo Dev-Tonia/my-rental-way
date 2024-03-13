@@ -38,10 +38,10 @@ const Footer = () => {
             <h4 className=" text-[#141414] font-bold text-xl">Info</h4>
             <ul>
               <li className=" mt-3">
-                <Link to="/">Contact Us</Link>
+                <Link to="/contact">Contact Us</Link>
               </li>
               <li className=" mt-3">
-                <Link to="/about/faq">About Us</Link>
+                <Link to="/about-us">About Us</Link>
               </li>
             </ul>
           </div>

@@ -19,6 +19,7 @@ import Table from "./pages/rentalsTab/Table";
 import Centerpiece from "./pages/rentalsTab/Centerpiece";
 import Accessories from "./pages/rentalsTab/Accessories";
 import Inflatable from "./pages/rentalsTab/Inflatable";
+import AboutUs from "./pages/aboutUs/AboutUs";
 
 import { lazy } from "react";
 
@@ -84,6 +85,10 @@ export const router = createBrowserRouter([
       {
         path: "/relocation",
         element: <Relocation />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
       },
     ],
   },
