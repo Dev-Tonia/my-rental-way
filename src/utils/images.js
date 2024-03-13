@@ -32,9 +32,17 @@ import HomeIcon2 from "../assets/icons/iconHome2.png";
 import PurchaseTag from "../assets/icons/purchase-tag.png";
 import OutlineSeal from "../assets/icons/outline_seal.png";
 import Union from "../assets/images/Union.png";
+import LocationLine from "../assets/icons/location-line.png";
+import MailBox from "../assets/icons/mail-box-outline.png";
+import OutlineEmail from "../assets/icons/outline-email.png";
+import PhoneBold from "../assets/icons/phone-bold.png";
 
 export {
   PurchaseTag,
+  LocationLine,
+  OutlineEmail,
+  PhoneBold,
+  MailBox,
   Union,
   OutlineSeal,
   Relocate1,

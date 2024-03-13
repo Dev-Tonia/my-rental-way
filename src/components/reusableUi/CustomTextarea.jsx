@@ -3,7 +3,7 @@ import CustomFieldset from "./CustomFieldset";
 
 export default function CustomTextarea({ formData }) {
   return (
-    <div className=" w-full">
+    <div className=" w-full my-6">
       <CustomFieldset legend={formData.legend}>
         <div className=" flex items-center px-8 py-4">
           <textarea

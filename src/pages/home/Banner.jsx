@@ -1,7 +1,7 @@
 import AboutIcon from "../../assets/icons/aboutIcon.png";
 const Banner = () => {
   return (
-    <section id="homebanner" className="  wrapper py-20">
+    <section id="" className="  wrapper py-20">
       <div className=" bg-secondary text-white rounded-3xl flex items-center justify-center py-16">
         <div className=" w-9/12 px-5">
           <div className=" flex items-center justify-center mb-8">
