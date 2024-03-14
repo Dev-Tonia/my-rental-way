@@ -23,6 +23,7 @@ import AboutUs from "./pages/aboutUs/AboutUs";
 import TermsAndCondition from "./pages/termsAndCondition/TermsAndCondition";
 
 import { lazy } from "react";
+import Policy from "./pages/policy/Policy";
 
 export const router = createBrowserRouter([
   {
@@ -94,6 +95,10 @@ export const router = createBrowserRouter([
       {
         path: "/terms-and-conditions",
         element: <TermsAndCondition />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <Policy />,
       },
     ],
   },
