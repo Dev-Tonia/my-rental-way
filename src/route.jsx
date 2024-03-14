@@ -20,6 +20,7 @@ import Centerpiece from "./pages/rentalsTab/Centerpiece";
 import Accessories from "./pages/rentalsTab/Accessories";
 import Inflatable from "./pages/rentalsTab/Inflatable";
 import AboutUs from "./pages/aboutUs/AboutUs";
+import TermsAndCondition from "./pages/termsAndCondition/TermsAndCondition";
 
 import { lazy } from "react";
 
@@ -89,6 +90,10 @@ export const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUs />,
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsAndCondition />,
       },
     ],
   },
