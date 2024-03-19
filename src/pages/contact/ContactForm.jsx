@@ -16,8 +16,8 @@ export default function ContactForm() {
     <section>
       <div className=" wrapper">
         <RoundedCard className={" "}>
-          <div className="p-10 grid grid-cols-12 gap-10">
-            <div className="col-span-7">
+          <div className="p-10 min-[900px]:grid grid-cols-12 gap-10">
+            <div className=" min-[900px]:col-span-7">
               <div className=" ">
                 <h2 className="text-[40px] leading-10 font-bold">
                   Send us a message
@@ -60,7 +60,7 @@ export default function ContactForm() {
                 </div>
               </form>
             </div>
-            <div className=" col-span-5 relative  overflow-hidden bg-primary-600 rounded-3xl  py-16">
+            <div className=" min-[900px]:col-span-5 relative  overflow-hidden bg-primary-600 rounded-3xl  py-16">
               <img
                 src={Ellipse}
                 className=" w-[40%]  absolute -right-10 -bottom-10 "

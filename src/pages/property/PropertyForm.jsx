@@ -15,14 +15,14 @@ const PropertyForm = () => {
       }}
     >
       <div className=" wrapper">
-        <div className="flex items-center gap-10">
-          <RoundedCard className={" p-5 w-5/12"}>
+        <div className="md:flex items-center gap-10">
+          <RoundedCard className={" p-5 md:w-5/12"}>
             <RoundedImg src={Union} />
           </RoundedCard>
           <div>
             <div className=" ">
               <h5 className=" text-lg">Let's help you find your next home</h5>
-              <h2 className="text-[40px] leading-10 font-bold">
+              <h2 className="text-2xl md:text-[30px] lg:text-[40px] leading-10 font-bold">
                 Send us your request
               </h2>
             </div>
