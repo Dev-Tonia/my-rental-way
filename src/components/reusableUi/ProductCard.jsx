@@ -33,7 +33,7 @@ const ProductCard = ({ product, className }) => {
                 </>
               ) : (
                 product.detailLists.map((detailList) => (
-                  <span>{detailList}</span>
+                  <span key={detailList}>{detailList}</span>
                 ))
               )}
             </div>

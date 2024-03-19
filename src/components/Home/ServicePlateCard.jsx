@@ -7,7 +7,8 @@ const ServicePlatformCard = ({ detail }) => {
         <img
           src={detail.src}
           alt="Venue booking category image "
-          className=" w-full h-full"
+          className=" w-full h-full bg-center
+          "
         />
       </div>
       <div className=" pt-5 pb-20 px-3 text-center ">

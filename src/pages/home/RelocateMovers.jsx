@@ -20,11 +20,11 @@ const RelocateMovers = () => {
       }}
     >
       <div className="wrapper">
-        <div className="flex gap-10">
-          <div className=" w-[46%]">
+        <div className="flex flex-col md:flex-row items-center gap-7 md:gap-5 lg:gap-10 pt-10">
+          <div className=" md:w-[46%]">
             <div className="text-neutral-50 w-10/12 ">
               <h5 className=" text-lg">We also render </h5>
-              <h2 className="text-[40px] leading-10 font-bold">
+              <h2 className="text-2xl md:text-[30px] lg:text-[40px] leading-10 font-bold">
                 Relocation/Movers service
               </h2>
               <p className=" text-lg my-4 leading-6">
@@ -49,7 +49,7 @@ const RelocateMovers = () => {
             </ul>
           </div>
 
-          <div className="w-[54%]">
+          <div className=" w-[80%] md:w-[54%] ">
             <div className=" ">
               <RoundedCard className={"p-4 relative rotate-[6deg]"}>
                 <RoundedImg src={Relocate1} />

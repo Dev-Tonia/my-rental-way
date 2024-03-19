@@ -53,7 +53,7 @@ const Header = () => {
       className=" sticky top-0 wrapper  py-3 bg-white/70 backdrop-blur-xl z-50 shadow-md"
     >
       <div className=" flex items-center justify-between">
-        <div className=" w-[100px] logo-menuflex">
+        <div className=" w-[100px] ">
           <Link to="/">
             <img src={Logo} className=" " alt="Brand logo" />
           </Link>
@@ -73,9 +73,14 @@ const Header = () => {
           </div>
         </nav>
 
-        <div className=" header_last flex items-center space-x-2">
-          <div>
-            <i className="bi bi-cart3 text-2xl"></i>
+        <div className=" header_last flex items-center space-x-6">
+          <div className=" relative">
+            <Link to="/cart">
+              <i className="bi bi-cart3 text-3xl"></i>
+            </Link>
+            <div className=" w-7 h-7 rounded-full p-1 flex items-center justify-center bg-primary-600/50 z-40 backdrop-blur absolute -top-2 left-4">
+              <span className=" font-bold">10</span>
+            </div>
           </div>
           <button className=" btn cursor-pointer">Explore</button>
         </div>

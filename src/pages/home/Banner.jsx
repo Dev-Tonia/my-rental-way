@@ -3,7 +3,7 @@ const Banner = () => {
   return (
     <section id="" className="  wrapper py-20">
       <div className=" bg-secondary text-white rounded-3xl flex items-center justify-center py-16">
-        <div className=" w-9/12 px-5">
+        <div className=" w-11/12 md:w-9/12 px-5">
           <div className=" flex items-center justify-center mb-8">
             <div className=" relative">
               <h2 className=" font-bold text-3xl">About Us</h2>

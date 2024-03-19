@@ -1,12 +1,5 @@
 // Images
-import {
-  Rental1,
-  ServiceIcon,
-  ServiceIcon1,
-  ServiceIcon2,
-  ImgOverlap,
-  Ellipse,
-} from "../../utils/images";
+import { Rental1, ImgOverlap, Ellipse } from "../../utils/images";
 
 // component
 import RoundedCard from "../../components/reusableUi/RoundedCard";
@@ -14,30 +7,9 @@ import RoundedImg from "../../components/reusableUi/RoundedImg";
 import SchemeCard from "../../components/reusableUi/SchemeCard";
 import EllipseCircle from "../../components/reusableUi/EllipseCircle";
 
+import { serviceList } from "../../utils/contents/homeContents";
+
 const RentalBooking = () => {
-  const serviceList = [
-    {
-      title: "Corporate hire",
-      src: ServiceIcon,
-      description:
-        "Top supplier of corporate marquees in South Yorkshire, with a focus on renting marquees for conferences, trade fairs,product launches, and exhibitions.",
-      bg: "bg-[#66E98336]",
-    },
-    {
-      title: "Retails",
-      src: ServiceIcon1,
-      description:
-        "We provide a range of temporary structures for retail use, perfect for a clothing store at your county show or a retail marquee space for pop-up food festivals.",
-      bg: "bg-[#668AE936]",
-    },
-    {
-      title: "Celebration ",
-      src: ServiceIcon2,
-      description:
-        "MY WAY serves a range of events, including dinner balls, anniversaries, birthday parties, graduation celebrations, dedications, weddings, and sports dinners at venue of your choice to suit all your event.",
-      bg: "bg-[#E9956636]",
-    },
-  ];
   return (
     <section
       className=""
@@ -48,8 +20,8 @@ const RentalBooking = () => {
       }}
     >
       <div className="wrapper">
-        <div className="flex gap-10 pt-10 ">
-          <div className=" w-1/2 relative">
+        <div className="flex flex-col md:flex-row items-center gap-7 md:gap-5 lg:gap-10 pt-10 ">
+          <div className=" md:w-1/2 relative">
             <RoundedCard className={"p-6 "}>
               <RoundedImg src={Rental1} className={"h-[500px]"} />
             </RoundedCard>
@@ -69,16 +41,16 @@ const RentalBooking = () => {
           <div className=" flex items-end ">
             <EllipseCircle className={"bg-primary-600"} />
           </div>
-          <div className="  w-1/2">
+          <div className="  md:w-1/2">
             <div className="text-neutral-50 pe-10 ">
               <h5 className=" text-lg">We render </h5>
-              <h2 className="text-[40px] leading-10 font-bold">
+              <h2 className=" text-2xl md:text-[30px] lg:text-[40px] leading-10 font-bold">
                 Seamless rental and venue booking service
               </h2>
             </div>
             <ul className=" ">
               {serviceList.map((item) => (
-                <li className="flex gap-4 mt-8 ">
+                <li className="flex gap-4 mt-8 " key={item.src}>
                   <div>
                     <div
                       className={`w-16 h-12  flex items-center justify-center ${item.bg} rounded-lg`}
@@ -87,8 +59,11 @@ const RentalBooking = () => {
                     </div>
                   </div>
                   <div className=" text-neutral-50">
-                    <h5 className=" text-xl font-bold "> {item.title}</h5>
-                    <p className=" text-lg pt-2 leading-6">
+                    <h5 className=" text-lg lg:text-xl font-bold ">
+                      {" "}
+                      {item.title}
+                    </h5>
+                    <p className=" lg:text-lg pt-2 leading-6">
                       {item.description}
                     </p>
                   </div>

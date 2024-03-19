@@ -21,8 +21,9 @@ import Accessories from "./pages/rentalsTab/Accessories";
 import Inflatable from "./pages/rentalsTab/Inflatable";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import TermsAndCondition from "./pages/termsAndCondition/TermsAndCondition";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 
-import { lazy } from "react";
 import Policy from "./pages/policy/Policy";
 
 export const router = createBrowserRouter([
@@ -99,6 +100,14 @@ export const router = createBrowserRouter([
       {
         path: "/privacy-policy",
         element: <Policy />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
       },
     ],
   },
