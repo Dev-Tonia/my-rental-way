@@ -5,9 +5,8 @@ import RoundedForm from "../components/reusableUi/RoundedForm";
 
 export default function Checkout() {
   const options = [
-    { title: "paystack", value: "Paystack" },
-    { title: "Paypal", value: "Paypal" },
-    { title: "Internet Banking", value: "Internet Banking" },
+    { title: "cash", value: "Cash on delivery" },
+    { title: "bank", value: "Bank Transfer" },
   ];
   return (
     <div>

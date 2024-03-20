@@ -58,6 +58,7 @@ const Header = () => {
             <img src={Logo} className=" " alt="Brand logo" />
           </Link>
         </div>
+        {/* Large screen menu */}
         <nav id="navbar" className="  order-last md:order-none ">
           <ul className={`hidden md:flex items-center space-x-8   ${active}`}>
             {navItems.map((navItem) => (
@@ -82,7 +83,9 @@ const Header = () => {
               <span className=" font-bold">10</span>
             </div>
           </div>
-          <button className=" btn cursor-pointer">Explore</button>
+          <Link to="/rentals" className=" btn cursor-pointer">
+            Explore
+          </Link>
         </div>
       </div>
       {isOpen && <MobileHeader active={active} closeNavbar={closeToggle} />}

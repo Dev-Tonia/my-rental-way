@@ -9,5 +9,5 @@
   @apply bg-primary-600 text-white rounded-3xl px-7 py-2;
 }
 a.active {
-  @apply text-primary-600  border-b-2 border-b-primary-600;
+  @apply text-primary-600  md:border-b-2 border-b-primary-600 border-b-0;
 }

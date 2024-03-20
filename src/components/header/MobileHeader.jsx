@@ -12,7 +12,7 @@ const MobileHeader = ({ active, closeNavbar }) => {
   return (
     <ul className={`md:hidden  block  ${active} wrapper`}>
       {links.map((link) => (
-        <li key={link.path} onClick={closeNavbar}>
+        <li key={link.path} onClick={closeNavbar} className=" py-2 border-b">
           <NavLink className="nav-link" to={link.path}>
             {link.title}
           </NavLink>

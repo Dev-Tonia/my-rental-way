@@ -9,7 +9,7 @@ export default function GradientHeader({ title, body }) {
           alt=""
         />
         <img src={Ellipse} className=" w-[5%] absolute -right-8 z-[1]" alt="" />
-        <div className=" w-9/12 px-5">
+        <div className=" w-11/12 md:w-9/12 px-5">
           <div className=" flex items-center justify-center mb-8">
             <div className=" relative">
               <h2 className=" font-bold text-4xl text-neutral-50">{title}</h2>
