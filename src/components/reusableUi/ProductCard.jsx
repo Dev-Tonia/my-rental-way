@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import EllipseCircle from "./EllipseCircle";
 import RoundedCard from "./RoundedCard";
 import RoundedImg from "./RoundedImg";
 
-const ProductCard = ({ product, className }) => {
+const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
+  const gotoDetailPage = () => navigate("/details", { state: product });
+
   //   const details = ;
   return (
     <RoundedCard className=" p-5 pb-10 transition ease-in-out delay-150 hover:scale-110">
@@ -40,7 +44,9 @@ const ProductCard = ({ product, className }) => {
           </div>
 
           <div className="rental_products_btn">
-            <button className=" btn font-bold text-sm">Book Now</button>
+            <button className=" btn font-bold text-sm" onClick={gotoDetailPage}>
+              Book Now
+            </button>
           </div>
         </div>
       </div>

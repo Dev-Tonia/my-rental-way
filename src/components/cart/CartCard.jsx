@@ -1,23 +1,22 @@
 import React from "react";
 import RoundedImg from "../reusableUi/RoundedImg";
 import { Two } from "../../utils/images";
-export default function CartCard() {
+export default function CartCard({ item }) {
   return (
     <div className=" md:flex justify-between  items-center border-b-2 pb-3 pt-8 md:pt-10">
       <div className=" flex space-x-5 items-center md:w-6/12 pb-3 md:pb-0">
         <div className=" w-6/12 relative">
-          <RoundedImg src={Two} />
+          <RoundedImg src={item.src} />
           <div className=" w-6 h-6 p-2 rounded-full bg-red-600 absolute -top-2 -right-3 flex items-center justify-center cursor-pointer ">
             <i class="bi bi-x text-2xl text-white "></i>
           </div>
         </div>
         <div className=" text-neutral-50 font-bold">
-          <h6 className="  text-xl">Event chairs</h6>
+          <h6 className="  text-xl">{item.title}</h6>
+
           <h6>
-            <span className=" text-neutral-30">Color:</span> White
-          </h6>
-          <h6>
-            <span className=" text-neutral-30">Size:</span> L
+            <span className=" text-neutral-30">{item.variant}:</span>{" "}
+            {item.variantChoice}
           </h6>
         </div>
       </div>
@@ -25,9 +24,10 @@ export default function CartCard() {
       <div className=" md:w-4/12 pb-3 md:pb-0">
         <h6 className=" text-neutral-50 font-bold text-lg">
           <span className=" inline-block md:hidden text-neutral-20">
-            Prices:{" "}
+            Prices:
           </span>
-          <span> £</span>156.56
+          <span> £</span>
+          {item.price}
         </h6>
       </div>
       <div className=" flex space-x-3 items-center md:w-2/12">

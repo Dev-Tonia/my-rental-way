@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import CustomSelect from "../../components/reusableUi/CustomSelect";
+import Dropdown from "./Dropdown";
 const RentalHeader = () => {
   const navItems = [
     {
@@ -52,6 +53,9 @@ const RentalHeader = () => {
               </li>
             ))}
           </ul>
+          <div className=" md:hidden">
+            <Dropdown />
+          </div>
         </div>
       </div>
     </header>

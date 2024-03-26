@@ -26,13 +26,13 @@ const products = [
   },
   {
     name: "CenterPlace",
-    detail: "Color",
+    detail: "size",
     detailLists: ["S", "M", "L"],
     src: One,
   },
   {
     name: "Sound System",
-    detail: "Color",
+    detail: "size",
     detailLists: ["S", "M", "L"],
     src: Three,
   },

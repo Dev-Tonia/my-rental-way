@@ -6,10 +6,14 @@ import openIcon from "../../assets/icons/icons8-menu-24.png";
 import closeIcon from "../../assets/icons/icons8-close-24.png";
 import Logo from "../../assets/images/Logo.jpeg";
 import MobileHeader from "./MobileHeader";
+import { useContext } from "react";
+import { CartContext } from "../../context/cartContext";
 
 const Header = () => {
   const [active, setActive] = useState("nav__menu");
   const [isOpen, setIsOpen] = useState(false);
+
+  const { cartItem } = useContext(CartContext);
 
   const navItems = [
     {
@@ -85,7 +89,7 @@ const Header = () => {
               <i className="bi bi-cart3 text-3xl"></i>
             </Link>
             <div className=" w-7 h-7 rounded-full p-1 flex items-center justify-center bg-primary-600/50 z-40 backdrop-blur absolute -top-2 left-4">
-              <span className=" font-bold">10</span>
+              <span className=" font-bold">{cartItem.length}</span>
             </div>
           </div>
 

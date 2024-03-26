@@ -25,6 +25,7 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 
 import Policy from "./pages/policy/Policy";
+import DetailedPage from "./pages/DetailedPage";
 
 export const router = createBrowserRouter([
   {
@@ -108,6 +109,10 @@ export const router = createBrowserRouter([
       {
         path: "/checkout",
         element: <Checkout />,
+      },
+      {
+        path: "/details",
+        element: <DetailedPage />,
       },
     ],
   },

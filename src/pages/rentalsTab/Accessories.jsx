@@ -10,7 +10,7 @@ export default function Accessories() {
     src: Three,
   };
   return (
-    <div className="grid grid-cols-3 gap-5 py-16">
+    <div className="grid grid-cols-1 min-[690px]:grid-cols-2 lg:grid-cols-3 gap-5 py-16">
       {Items.map((item) => (
         <ProductCard product={product} key={item} />
       ))}
