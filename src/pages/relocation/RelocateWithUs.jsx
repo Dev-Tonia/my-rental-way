@@ -33,10 +33,11 @@ const RelocateWithUs = () => {
           />
         </GroupInput>
         <GroupInput>
-          <CustomSelect
+          <CustomInput
             formData={{
               legend: "Type of Goods",
-              options: options,
+              type: "text",
+              placeholder: "Type of goods",
             }}
           />
           <CustomInput

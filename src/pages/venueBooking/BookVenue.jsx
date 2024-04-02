@@ -1,16 +1,7 @@
-// import DatePicker from "tailwind-datepicker-react";
-// import CustomDatePicker from "../../components/reusableUi/CustomDatePicker";
-
 import CustomInput from "../../components/reusableUi/CustomInput";
-import CustomSelect from "../../components/reusableUi/CustomSelect";
 import GroupInput from "../../components/reusableUi/GroupInput";
 import RoundedForm from "../../components/reusableUi/RoundedForm";
-const options = [
-  { title: "MTN", value: "MTN" },
-  { title: "Airtel", value: "Airtel" },
-  { title: "9Mobile", value: "9Mobile" },
-  { title: "Glo", value: "Glo" },
-];
+
 const BookVenue = () => {
   return (
     <section>
@@ -55,24 +46,28 @@ const BookVenue = () => {
               placeholder: "+447 354 6543 876",
             }}
           />
-          <CustomSelect
+
+          <CustomInput
             formData={{
+              type: "text",
               legend: "Preferred Location",
-              options: options,
+              placeholder: "Location",
             }}
           />
         </GroupInput>
         <GroupInput>
-          <CustomSelect
+          <CustomInput
             formData={{
+              type: "text",
               legend: "Event Type",
-              options: options,
+              placeholder: "Event Type",
             }}
-          />
-          <CustomSelect
+          />{" "}
+          <CustomInput
             formData={{
+              type: "text",
               legend: "Other Information",
-              options: options,
+              placeholder: "Other info",
             }}
           />
         </GroupInput>

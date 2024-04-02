@@ -16,13 +16,13 @@ export default function DetailedPage() {
   const data = location.state;
 
   const whatever = {
-    title: data.name,
+    title: data.title,
     variant: data.detail,
     variantChoice: pickVariant,
     src: data.src,
     quantity: quantity,
-    pricePerUnit: 2,
-    price: quantity * 2,
+    pricePerUnit: data.price,
+    price: quantity * data.price,
   };
 
   const addToCart = () => {
@@ -38,11 +38,11 @@ export default function DetailedPage() {
           <div className=" grid-cols-12 md:w-7/12">
             <div className="  mt-4">
               <h5 className=" font-bold text-2xl text-neutral-50">
-                {data.name}
+                {data.title}
               </h5>
               <p className="  text-primary-600 font-bold mt-4">
                 <span>&#x24;</span>
-                <span>1.75+ VAT</span>
+                <span>{data.price}</span>
               </p>
             </div>
 
@@ -51,13 +51,13 @@ export default function DetailedPage() {
                 {data.detail}
               </span>
               <div className=" flex space-x-4">
-                {data.name === "Chair" ? (
+                {data.title === "Chair" ? (
                   <>
                     <EllipseCircle className={" bg-primary-600"} />
                     <EllipseCircle className={" bg-secondary"} />
                     <EllipseCircle className={" bg-[#ADFE01]"} />
                   </>
-                ) : (
+                ) : data.detailLists ? (
                   data.detailLists.map((detailList) => (
                     <div
                       className=" min-w-7 h-7 p-3 rounded bg-gray-300/40 flex items-center justify-center cursor-pointer"
@@ -67,6 +67,8 @@ export default function DetailedPage() {
                       <span className=" font-semibold">{detailList}</span>
                     </div>
                   ))
+                ) : (
+                  ""
                 )}
               </div>
             </div>
