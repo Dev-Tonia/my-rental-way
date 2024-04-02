@@ -1,4 +1,6 @@
 import ProductCard from "../../components/reusableUi/ProductCard";
+import { allProducts } from "../../utils/productItems";
+/*
 import { One, Two, Three, Four, Five, Six } from "../../utils/images";
 const products = [
   {
@@ -37,10 +39,11 @@ const products = [
     src: Three,
   },
 ];
+*/
 export default function AllProduct() {
   return (
     <div className="grid grid-cols-1 min-[690px]:grid-cols-2 lg:grid-cols-3 gap-5 py-16">
-      {products.map((product) => (
+      {allProducts.map((product) => (
         <ProductCard product={product} key={product.name} />
       ))}
     </div>

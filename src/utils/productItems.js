@@ -4,7 +4,6 @@ import FourBySix from "../assets/images/4x6.png";
 import FourByEight from "../assets/images/4x8.png";
 import FiveByTen from "../assets/images/5x10.png";
 import SixByTwelve from "../assets/images/6x12.png";
-import SixByTwelve from "../assets/images/6x12.png";
 import PopUpBlack from "../assets/images/3x6-pop-up-black.png";
 import PopUpGreen from "../assets/images/3x6-pop-up-green.png";
 import PopUpOffWhite from "../assets/images/3x6-pop-up-offwhite.png";
@@ -38,12 +37,12 @@ import BallonStands from "../assets/images/ballon-stands.png";
 import Candelabra9 from "../assets/images/candelabra9.png";
 import Candelabra6 from "../assets/images/candelabra6.png";
 import SmallFlower from "../assets/images/small-flower-stand.png";
-import SmallFlower from "../assets/images/small-flower-stand.png";
 import FeatherTableLamp from "../assets/images/feather-table-lamps.png";
+import FoldableBigRec from "../assets/images/six.png";
 
-export const allProduct = [
+export const category = {
   // centerpieces
-  [
+  centerpieces: [
     {
       id: 40,
       title: "feather Table lamp",
@@ -109,13 +108,20 @@ export const allProduct = [
     },
   ],
   // Table
-  [
+  table: [
     {
       id: 27,
       title: "Big Rectangle Foldable Tables ",
       color: "white",
       price: 5,
       src: TableRecBig,
+    },
+    {
+      id: 45,
+      title: "Big Black Rectangle Foldable Tables ",
+      color: "black",
+      price: 5,
+      src: FoldableBigRec,
     },
     {
       id: 28,
@@ -147,7 +153,7 @@ export const allProduct = [
     },
   ],
   // Ass
-  [
+  ass: [
     {
       id: 21,
       title: "Sashes Bands with Buckle Bows",
@@ -192,7 +198,7 @@ export const allProduct = [
     },
   ],
   // tents
-  [
+  tents: [
     // tents
     {
       id: 1,
@@ -268,7 +274,7 @@ export const allProduct = [
     },
   ],
   // chairs
-  [
+  chairs: [
     {
       id: 11,
       title: "Red Banquet chair ",
@@ -340,4 +346,318 @@ export const allProduct = [
       src: StackableChairGreen,
     },
   ],
+};
+export const allProducts = [
+  {
+    id: 40,
+    title: "feather Table lamp",
+    detailLists: [""],
+    detail: "size",
+    price: 3,
+    src: FeatherTableLamp,
+  },
+  {
+    id: 45,
+    title: "Big Black Rectangle Foldable Tables ",
+    color: "black",
+    detail: "color",
+    price: 5,
+    src: FoldableBigRec,
+  },
+  {
+    id: 27,
+    title: "Big Rectangle Foldable Tables ",
+    color: "white",
+    price: 5,
+    src: TableRecBig,
+  },
+  {
+    id: 21,
+    title: "Sashes Bands with Buckle Bows",
+    color: "",
+    price: 1,
+    src: SashesBands,
+  },
+  {
+    id: 1,
+    title: "3x4 Marquee party tent",
+    detailLists: ["3x4 M "],
+    detail: "size",
+    price: 100,
+    src: ThreeByFour,
+  },
+  {
+    id: 7,
+    title: "Black 3x6 Pop up gazebo",
+    detailLists: ["3x6 M "],
+    detail: "size",
+    price: 70,
+    src: PopUpBlack,
+  },
+  {
+    id: 11,
+    title: "Red Banquet chair ",
+    color: "Red",
+    price: 3,
+    src: BanquetChairRed,
+  },
+  {
+    id: 12,
+    title: "Blue Banquet chair ",
+    color: "Blue",
+    price: 3,
+    src: BanquetChairBlue,
+  },
+  {
+    id: 22,
+    title: " Oxblood Chair cover ",
+    color: "Oxblood",
+    price: 1,
+    src: CoverOxblood,
+  },
+  {
+    id: 28,
+    title: "Big circle Foldable Tables ",
+    color: "white",
+    price: 5,
+    src: TableCircleBig,
+  },
+  {
+    id: 2,
+    title: "3x6 Marquee party tent",
+    detailLists: ["3x6 M "],
+    detail: "size",
+    price: 120,
+    src: ThreeBySix,
+  },
+  {
+    id: 32,
+    title: "Floral Stand with golden metal stands",
+    detailLists: [""],
+    detail: "size",
+    price: 3,
+    src: FloralStandsGolden,
+  },
+  {
+    id: 33,
+    title: "Floral Stand intricate design",
+    detailLists: [""],
+    detail: "size",
+    price: 3,
+    src: FloralStandsIntricate,
+  },
+  {
+    id: 29,
+    title: "White small rectangle Foldable Tables ",
+    color: "white",
+    price: 4,
+    src: TableRecWhiteSmall,
+  },
+  {
+    id: 23,
+    title: " White Chair cover ",
+    color: "White",
+    price: 1,
+    src: CoverWhite,
+  },
+
+  {
+    id: 3,
+    title: "4x6 Marquee party tent",
+    detailLists: ["4x6 M "],
+    detail: "size",
+    price: 150,
+    src: FourBySix,
+  },
+  {
+    id: 13,
+    title: "Black Foldable chair",
+    color: "black",
+    price: 2,
+    src: FoldableBlack,
+  },
+
+  {
+    id: 14,
+    title: "White Foldable chair ",
+    color: "white",
+    price: 2,
+    src: FoldableWhite,
+  },
+  {
+    id: 8,
+    title: "Green 3x6 Pop up gazebo ",
+    detailLists: ["3x6 M "],
+    detail: "size",
+    price: 70,
+    src: PopUpGreen,
+  },
+  {
+    id: 24,
+    title: " Black Table cover ",
+    color: "White",
+    price: 1,
+    src: TableCoverBlack,
+  },
+  {
+    id: 30,
+    title: "White small circle Foldable Tables ",
+    color: "white",
+    price: 4,
+    src: TableCircleSmall,
+  },
+  {
+    id: 34,
+    title: "Floral Stand with crystal design",
+    detailLists: "",
+    detail: "size",
+    price: 3,
+    src: FloralDiamond,
+  },
+  {
+    id: 35,
+    title: "Glass Vases",
+    detailLists: ["small"],
+    detail: "size",
+    price: 3,
+    src: GlassVases,
+  },
+  {
+    id: 31,
+    title: " Small rectangle Foldable Tables ",
+    color: "",
+    price: 4,
+    src: TableRecSmall,
+  },
+  {
+    id: 4,
+    title: "4x8 Marquee party tent",
+    detailLists: ["4x8 M "],
+    detail: "size",
+    price: 170,
+    src: FourByEight,
+  },
+  {
+    id: 5,
+    title: "5x10 Marquee party tent",
+    detailLists: ["5x10 M "],
+    detail: "size",
+    price: 220,
+    src: FiveByTen,
+  },
+  {
+    id: 15,
+    title: "Black Foldable chair  with smaller back rest",
+    color: "black",
+    price: 2,
+    src: FoldableBlack2,
+  },
+  {
+    id: 16,
+    title: "Dining Chair 1",
+    color: "black",
+    price: 2,
+    src: DiningChair1,
+  },
+
+  {
+    id: 36,
+    title: "Ballon Stands",
+    detailLists: "",
+    detail: "size",
+    price: 3,
+    src: BallonStands,
+  },
+  {
+    id: 37,
+    title: "Candelabra with nine arms",
+    size: "",
+    detail: "size",
+    price: 3,
+    src: Candelabra9,
+  },
+  {
+    id: 25,
+    title: " Blue Table cover ",
+    color: "blue",
+    price: 1,
+    src: TableCoverBlue,
+  },
+  {
+    id: 26,
+    title: "Red Table cover ",
+    color: "red",
+    price: 1,
+    src: TableCoverRed,
+  },
+
+  {
+    id: 9,
+    title: "Off-white 3x6 Pop up gazebo ",
+    detailLists: ["3x6 M "],
+    detail: "size",
+    price: 70,
+    src: PopUpOffWhite,
+  },
+  {
+    id: 10,
+    title: " White 3x6 Pop up gazebo ",
+    detailLists: ["3x6 M "],
+    detail: "size",
+    price: 70,
+    src: PopUpWhite,
+  },
+  {
+    id: 17,
+    title: "Dining Chair 2",
+    color: "black",
+    price: 2,
+    src: DiningChair2,
+  },
+  {
+    id: 18,
+    title: "Dining Chair 3",
+    color: "black",
+    price: 2,
+    src: DiningChair3,
+  },
+  {
+    id: 38,
+    title: "Candelabra with six arms",
+    detailLists: [""],
+    detail: "size",
+    price: 3,
+    src: Candelabra6,
+  },
+  {
+    id: 39,
+    title: "Small Flower stand",
+    detailLists: "",
+    detail: "size",
+    price: 3,
+    src: SmallFlower,
+  },
+  {
+    id: 19,
+    title: "Ash Stackable Chair ",
+    color: "ash",
+    price: 2,
+    src: StackableChairAsh,
+  },
+  {
+    id: 20,
+    title: "Green Stackable Chair ",
+    color: "green",
+    price: 2,
+    src: StackableChairGreen,
+  },
+
+  {
+    id: 6,
+    title: "6x12 Marquee party tent",
+    detailLists: ["6x12 M "],
+    detail: "size",
+    price: 300,
+    src: SixByTwelve,
+  },
 ];

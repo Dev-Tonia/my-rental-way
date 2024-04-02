@@ -11,15 +11,15 @@ const ProductCard = ({ product }) => {
   return (
     <RoundedCard className=" p-5 pb-10 transition ease-in-out delay-150 hover:scale-110">
       <div>
-        <RoundedImg src={product.src} className={"h-[220px]"} />
+        <RoundedImg src={product.src} className={"h-[220px] "} />
 
         <div className=" flex justify-between items-center mt-4">
-          <h5 className=" font-bold text-2xl text-neutral-50">
-            {product.name}
+          <h5 className=" font-semibold text-xl text-neutral-50 w-[70%] capitalize">
+            {product.title}
           </h5>
           <p className="  text-primary-600 font-semibold">
             <span>&#x24;</span>
-            <span>1.75+ VAT</span>
+            <span>{product.price}+ VAT</span>
           </p>
         </div>
 
@@ -29,16 +29,18 @@ const ProductCard = ({ product }) => {
               {product.detail}
             </span>
             <div className=" flex space-x-4">
-              {product.name === "Chair" ? (
+              {product.title === "Chair" ? (
                 <>
                   <EllipseCircle className={" bg-primary-600"} />
                   <EllipseCircle className={" bg-secondary"} />
                   <EllipseCircle className={" bg-[#ADFE01]"} />
                 </>
-              ) : (
+              ) : product.detailLists ? (
                 product.detailLists.map((detailList) => (
                   <span key={detailList}>{detailList}</span>
                 ))
+              ) : (
+                ""
               )}
             </div>
           </div>

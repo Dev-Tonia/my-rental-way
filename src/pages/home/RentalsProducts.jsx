@@ -1,5 +1,6 @@
 import ProductCard from "../../components/reusableUi/ProductCard";
-import { products } from "../../utils/contents/homeContents";
+// import { products } from "../../utils/contents/homeContents";
+import { allProducts } from "../../utils/productItems";
 
 const RentalsProducts = () => {
   return (
@@ -20,7 +21,7 @@ const RentalsProducts = () => {
         </div>
 
         <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-16">
-          {products.map((product) => (
+          {allProducts.slice(0, 9).map((product) => (
             <ProductCard product={product} key={product.name} />
           ))}
         </div>

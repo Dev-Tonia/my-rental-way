@@ -3,7 +3,7 @@ const RoundedImg = ({ src, className }) => {
     <div className={`overflow-hidden rounded-2xl ${className}`}>
       <img
         src={src}
-        className=" w-full h-full object-cover object-center"
+        className=" w-full h-full object-contain object-center"
         alt="My Image"
       />
     </div>
