@@ -67,7 +67,7 @@ const Header = () => {
         {/* Large screen menu */}
         <nav id="navbar" className="  order-last min-[900px]:order-none ">
           <ul
-            className={`hidden min-[900px]:flex items-center space-x-8   ${active}`}
+            className={`hidden min-[900px]:flex items-center space-x-8 ps-10  ${active}`}
           >
             {navItems.map((navItem) => (
               <li key={navItem.title} className=" nav-item">
@@ -84,13 +84,13 @@ const Header = () => {
 
         {/* CART LOGO */}
         <div className=" header_last flex items-center space-x-6 ms-auto ">
-          <div className=" relative ">
-            <Link to="/cart">
+          <div className="  ">
+            <Link to="/cart" className="relative">
               <i className="bi bi-cart3 text-3xl"></i>
+              <div className=" w-7 h-7 rounded-full p-1 flex items-center justify-center bg-primary-600/50 z-40 backdrop-blur absolute -top-5 left-4">
+                <span className=" font-bold">{cartItem.length}</span>
+              </div>
             </Link>
-            <div className=" w-7 h-7 rounded-full p-1 flex items-center justify-center bg-primary-600/50 z-40 backdrop-blur absolute -top-2 left-4">
-              <span className=" font-bold">{cartItem.length}</span>
-            </div>
           </div>
 
           {/*  */}

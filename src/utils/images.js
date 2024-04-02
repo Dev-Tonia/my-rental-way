@@ -41,6 +41,8 @@ import Team2 from "../assets/images/team2.png";
 import Team3 from "../assets/images/team3.png";
 import Team4 from "../assets/images/team4.png";
 
+//
+
 export {
   PurchaseTag,
   Team1,

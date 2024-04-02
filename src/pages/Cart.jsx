@@ -1,13 +1,26 @@
 import { Link, useNavigate } from "react-router-dom";
 import CartCard from "../components/cart/CartCard";
 import RoundedCard from "../components/reusableUi/RoundedCard";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../context/cartContext";
 
 export default function Cart() {
   const navigate = useNavigate();
-
   const { cartItem } = useContext(CartContext);
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  // Getting the updated price
+  const getCurrentItemPrice = (newPrice) => {
+    setTotalPrice((prev) => prev + newPrice);
+  };
+
+  useEffect(() => {
+    setTotalPrice(
+      cartItem.reduce((acc, currentValue) => {
+        return acc + currentValue.price;
+      }, 0)
+    );
+  }, []);
 
   const goToCheckout = () => {
     navigate("/checkout");
@@ -34,13 +47,17 @@ export default function Cart() {
       ) : (
         <RoundedCard className={" px-5 pb-2"}>
           {cartItem.map((item) => (
-            <CartCard item={item} />
+            <CartCard
+              item={item}
+              key={item.title}
+              getCurrentItemPrice={getCurrentItemPrice}
+            />
           ))}
           <div className=" flex items-center justify-between py-10 px-3">
             <h2 className=" font-bold text-2xl text-neutral-50"> Subtotal </h2>
             <h4 className=" text-2xl font-bold text-primary-600">
               <span>£</span>
-              <span>156.56</span>
+              <span>{totalPrice.toFixed(2)}</span>
             </h4>
           </div>
         </RoundedCard>

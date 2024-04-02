@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Three } from "../utils/images";
 import RoundedImg from "../components/reusableUi/RoundedImg";
 import EllipseCircle from "../components/reusableUi/EllipseCircle";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -9,17 +8,21 @@ import { CartContext } from "../context/cartContext";
 export default function DetailedPage() {
   let location = useLocation();
   const navigate = useNavigate();
+
+  const { cartItem, setCartItem } = useContext(CartContext);
   const [isAdd, setIsAdd] = useState(false);
   const [pickVariant, setPickVariant] = useState("");
-
+  const [quantity, setQuantity] = useState(1);
   const data = location.state;
-  const { cartItem, setCartItem } = useContext(CartContext);
+
   const whatever = {
     title: data.name,
     variant: data.detail,
     variantChoice: pickVariant,
     src: data.src,
-    price: "23.4",
+    quantity: quantity,
+    pricePerUnit: 2,
+    price: quantity * 2,
   };
 
   const addToCart = () => {
@@ -57,7 +60,7 @@ export default function DetailedPage() {
                 ) : (
                   data.detailLists.map((detailList) => (
                     <div
-                      className=" min-w-7 h-7 p-3 rounded bg-gray-300/40 flex items-center justify-center"
+                      className=" min-w-7 h-7 p-3 rounded bg-gray-300/40 flex items-center justify-center cursor-pointer"
                       key={detailList}
                       onClick={() => setPickVariant(detailList)}
                     >
@@ -75,6 +78,8 @@ export default function DetailedPage() {
                 <div className="  ">
                   <input
                     type="number"
+                    value={quantity}
+                    onChange={(e) => setQuantity(e.target.value)}
                     min={1}
                     className=" w-full outline-none border border-neutral-20 rounded-lg px-3 py-2"
                   />
