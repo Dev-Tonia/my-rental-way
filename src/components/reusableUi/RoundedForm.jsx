@@ -5,6 +5,7 @@ export default function RoundedForm({
   formTitle,
   btnTitle,
   btnClass = "",
+  submitForm,
 }) {
   return (
     <div className="wrapper  my-20 md:my-32">
@@ -12,7 +13,7 @@ export default function RoundedForm({
         <h2 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
           {formTitle}
         </h2>
-        <form action="" method="POST">
+        <form action="" method="POST" onSubmit={submitForm}>
           {children}
           <div className={`flex items-center justify-center py-20 ${btnClass}`}>
             <button type="submit" className=" btn">

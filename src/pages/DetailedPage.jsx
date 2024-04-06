@@ -41,7 +41,7 @@ export default function DetailedPage() {
                 {data.title}
               </h5>
               <p className="  text-primary-600 font-bold mt-4">
-                <span>&#x24;</span>
+                <span>£</span>
                 <span>{data.price}</span>
               </p>
             </div>

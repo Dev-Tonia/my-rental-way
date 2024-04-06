@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
             {product.title}
           </h5>
           <p className="  text-primary-600 font-semibold">
-            <span>&#x24;</span>
+            <span>£</span>
             <span>{product.price}+ VAT</span>
           </p>
         </div>
